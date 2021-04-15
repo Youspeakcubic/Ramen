@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.main {
+  position: absolute;
+  top:0%;
+  width:100%;
 }
+.navbar{
+  background-color: #EBE1BD;
+  border-bottom:3px #552400 solid;
+  color:black;
+  font-family: 'Lobster', cursive;
+  display: inline-block;
+}
+.titleH1{
+  font-family: 'Lobster', cursive;
+}
+.sentP{
+  font-family: 'Cormorant Unicase', serif;
+}
+.slant{
+    padding: 50px 0;
+    background-color: #EBE1BD;
+    overflow: visible;
+    z-index: 1;
+    position: absolute;
+    top:110%;
+    width: 100%;
+    opacity: 0.8;
+}
+.slant:before, .slant:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  transform-origin: left top;
+  transform: skewY(-3deg);
+}
+.slant:after {
+  top: 0;
+  transform-origin: left top;
+  transform: skewY(3deg);
+}
+.slant .ramen {
+justify-content: center;
+background-color: #EBE1BD;
+text-align: center;
+font-family: 'Lobster', cursive;
+}
+.slant1{
+    padding: 50px 0;
+    background-color: #EBE1BD;
+    overflow: visible;
+    z-index: 1;
+    position: absolute;
+    top:220%;
+    width: 100%;
+    opacity: 0.8;
+}
+.slant1:before, .slant1:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  transform-origin: right top;
+  transform: skewY(-3deg);
+}
+.slant1:after {
+  top: 0;
+  transform-origin: right top;
+  transform: skewY(3deg);
+}
+.slant1 .reviews {
+justify-content: center;
+background-color: #EBE1BD;
+text-align: center;
+font-family: 'Lobster', cursive;
+}
+.contact{
+    background-color: #EBE1BD;
+    border:3px #552400 solid;
+    width: 100%;
+}
+.contact h1{
+    font-family: 'Lobster', cursive;
+}
+.contact h3, p{
+    font-family: 'Cormorant Unicase', serif;
+}
+footer{
+  background-color: #EBE1BD;
+  text-align: center;
+}
+/* Mobile styles */
+@media screen and (max-width:768px){
+  .titleH1{
+    font-size: 15px;
+  }
+  .sentP{
+    font-size: 10px;
+  }
+  .contact h1{
+    font-size: 15px;
+  }
+  .contact h3, p{
+    font-size: 10px;
+  }
+  img {
+    object-fit: scale-down;
+  }
+  .slant1{
+    visibility: collapse;
+  }
+  .slant{
+    visibility: collapse;
+  }
+}
+@media screen and (min-width:769px) and (max-width:1200px){
+html{
+  background-color: #EBE1BD;
+}
+footer{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}
+.slant{
+  visibility: collapse;
+}
+.slant1{
+  position: absolute;
+  top:70%;
+}
+.contact{
+  position: absolute;
+  top:120%;
+}
+}
+@media screen and (min-width:1201px) and (max-width:1700px){
+  html{
+    background-color: #EBE1BD;
+  }
+  footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+  }
+  .slant{
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  }
+  .slant1{
+    position: absolute;
+    top:220%;
+  }
+  .contact{
+    position: absolute;
+    top:320%;
+  }
 }
