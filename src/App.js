@@ -3,7 +3,7 @@ import Landing from "./landing.js";
 import Ramen from "./ramen.js";
 import Reviews from "./reviews.js";
 import Contact from "./contact.js"
-import Footer from "./footer.js";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
@@ -15,7 +15,6 @@ function App() {
       <Ramen />
       <Reviews />
       <Contact />
-      <Footer />
     </div>
   );
 }

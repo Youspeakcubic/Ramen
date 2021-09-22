@@ -1,7 +1,12 @@
+
+html{
+  background-color: #454d55;
+}
 .main {
   position: absolute;
   top:0%;
   width:100%;
+    border-bottom:3px #552400 solid;
 }
 .navbar{
   background-color: #EBE1BD;
@@ -24,7 +29,7 @@
     position: absolute;
     top:110%;
     width: 100%;
-    opacity: 0.8;
+    opacity: .85;
 }
 .slant:before, .slant:after {
   content: '';
@@ -56,7 +61,7 @@ font-family: 'Lobster', cursive;
     position: absolute;
     top:220%;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 .slant1:before, .slant1:after {
   content: '';
@@ -81,15 +86,26 @@ text-align: center;
 font-family: 'Lobster', cursive;
 }
 .contact{
-    background-color: #EBE1BD;
-    border:3px #552400 solid;
-    width: 100%;
+    background-color: #454d55;
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+}
+.contact > div:nth-child(2) > div:nth-child(1) {
+ width: 29% !important;
+}
+
+.contactTable{
+  width:70%;
 }
 .contact h1{
     font-family: 'Lobster', cursive;
 }
 .contact h3, p{
     font-family: 'Cormorant Unicase', serif;
+}
+.ramen .card {
+  border: #552400 solid .5vh !important;
 }
 footer{
   background-color: #EBE1BD;
@@ -120,14 +136,6 @@ footer{
   }
 }
 @media screen and (min-width:769px) and (max-width:1200px){
-html{
-  background-color: #EBE1BD;
-}
-footer{
-  position: fixed;
-  bottom:0;
-  width: 100%;
-}
 .slant{
   visibility: collapse;
 }
@@ -138,20 +146,10 @@ footer{
 .contact{
   position: absolute;
   top:120%;
+  margin-bottom: 1vh;
 }
 }
 @media screen and (min-width:1201px) and (max-width:1700px){
-  html{
-    background-color: #EBE1BD;
-  }
-  footer{
-    position: fixed;
-    bottom:0;
-    width: 100%;
-  }
-  .slant{
-
-  }
   .slant1{
     position: absolute;
     top:220%;
@@ -159,5 +157,6 @@ footer{
   .contact{
     position: absolute;
     top:320%;
+    margin-bottom: 1vh;
   }
 }
