@@ -1,36 +1,43 @@
-
-html{
+html {
   background-color: #454d55;
 }
+
 .main {
   position: absolute;
-  top:0%;
-  width:100%;
-    border-bottom:3px #552400 solid;
+  top: 0%;
+  width: 100%;
+  border-bottom: 3px #552400 solid;
 }
-.navbar{
+
+.navbar {
   background-color: #EBE1BD;
-  border-bottom:3px #552400 solid;
-  color:black;
+  border-bottom: 3px #552400 solid;
+  color: black;
   font-family: 'Lobster', cursive;
   display: inline-block;
 }
-.titleH1{
+
+.titleH1 {
   font-family: 'Lobster', cursive;
+  font-size: 4vh;
 }
-.sentP{
+
+.sentP {
   font-family: 'Cormorant Unicase', serif;
+  font-size: 2vh;
 }
-.slant{
-    padding: 50px 0;
-    background-color: #EBE1BD;
-    overflow: visible;
-    z-index: 1;
-    position: absolute;
-    top:110%;
-    width: 100%;
-    opacity: .85;
+
+.slant {
+  padding: 50px 0;
+  background-color: #EBE1BD;
+  overflow: visible;
+  z-index: 1;
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  opacity: .85;
 }
+
 .slant:before, .slant:after {
   content: '';
   width: 100%;
@@ -42,27 +49,31 @@ html{
   transform-origin: left top;
   transform: skewY(-3deg);
 }
+
 .slant:after {
   top: 0;
   transform-origin: left top;
   transform: skewY(3deg);
 }
+
 .slant .ramen {
-justify-content: center;
-background-color: #EBE1BD;
-text-align: center;
-font-family: 'Lobster', cursive;
+  justify-content: center;
+  background-color: #EBE1BD;
+  text-align: center;
+  font-family: 'Lobster', cursive;
 }
-.slant1{
-    padding: 50px 0;
-    background-color: #EBE1BD;
-    overflow: visible;
-    z-index: 1;
-    position: absolute;
-    top:220%;
-    width: 100%;
-    opacity: 0.85;
+
+.slant1 {
+  padding: 50px 0;
+  background-color: #EBE1BD;
+  overflow: visible;
+  z-index: 1;
+  position: absolute;
+  top: 220%;
+  width: 100%;
+  opacity: 0.85;
 }
+
 .slant1:before, .slant1:after {
   content: '';
   width: 100%;
@@ -74,89 +85,112 @@ font-family: 'Lobster', cursive;
   transform-origin: right top;
   transform: skewY(-3deg);
 }
+
 .slant1:after {
   top: 0;
   transform-origin: right top;
   transform: skewY(3deg);
 }
+
 .slant1 .reviews {
-justify-content: center;
-background-color: #EBE1BD;
-text-align: center;
-font-family: 'Lobster', cursive;
-}
-.contact{
-    background-color: #454d55;
-    width:100%;
-    display:flex;
-    justify-content: flex-start;
-}
-.contact > div:nth-child(2) > div:nth-child(1) {
- width: 29% !important;
+  justify-content: center;
+  background-color: #EBE1BD;
+  text-align: center;
+  font-family: 'Lobster', cursive;
 }
 
-.contactTable{
-  width:70%;
+.contact {
+  background-color: #454d55;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
-.contact h1{
-    font-family: 'Lobster', cursive;
+
+.contact>div:nth-child(2)>div:nth-child(1) {
+  width: 29% !important;
 }
-.contact h3, p{
-    font-family: 'Cormorant Unicase', serif;
+
+.contactTable {
+  width: 70%;
 }
+
+.contact div {
+  max-height: 52%;
+}
+
+.contact h1 {
+  font-family: 'Lobster', cursive;
+}
+
+.contact h3, p {
+  font-family: 'Cormorant Unicase', serif;
+}
+
 .ramen .card {
   border: #552400 solid .5vh !important;
 }
-footer{
+
+footer {
   background-color: #EBE1BD;
   text-align: center;
 }
+
 /* Mobile styles */
-@media screen and (max-width:768px){
-  .titleH1{
-    font-size: 15px;
+@media screen and (max-width:768px) {
+  .ramen .card {
+    width: 8rem !important;
   }
-  .sentP{
-    font-size: 10px;
+
+  .col {
+    padding: 0 !important;
   }
-  .contact h1{
-    font-size: 15px;
+
+  .reviews .card {
+    width: 12rem !important;
   }
-  .contact h3, p{
-    font-size: 10px;
+
+  .slant {
+    position: absolute;
+    top: 85%;
   }
-  img {
-    object-fit: scale-down;
+
+  .slant1 {
+    position: absolute;
+    top: 180%;
+    max-width: 100%;
   }
-  .slant1{
+
+  .contact {
+    position: absolute;
+    top: 310%;
+  }
+
+  .contactTable {
+    width: 100%;
+  }
+
+  .lastRev {
+    visibility: collapse !important;
+  }
+
+  .googleMaps {
     visibility: collapse;
   }
-  .slant{
-    visibility: collapse;
-  }
 }
-@media screen and (min-width:769px) and (max-width:1200px){
-.slant{
-  visibility: collapse;
-}
-.slant1{
-  position: absolute;
-  top:70%;
-}
-.contact{
-  position: absolute;
-  top:120%;
-  margin-bottom: 1vh;
-}
-}
-@media screen and (min-width:1201px) and (max-width:1700px){
-  .slant1{
+
+@media screen and (min-width:844px) and (max-width:2000px) {
+  .slant1 {
     position: absolute;
-    top:220%;
+    top: 200%;
   }
-  .contact{
+
+  .contact {
     position: absolute;
-    top:320%;
+    top: 280%;
     margin-bottom: 1vh;
+  }
+
+  .contact div {
+    max-height: 100%;
   }
 }
